@@ -1,0 +1,27 @@
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: #ff0057;
+    border-radius: 8px;
+    transition: transform .5s ease-in-out;
+    animation: anim 5s ease-in-out infinite forwards;
+}
+
+@keyframes anim{
+    0%{
+        background-color: #ff0057;
+        transform: translateX(0);
+    }
+    25%{
+        background-color: #05c72f;
+        transform: translateX(550px);
+    }
+    50%{
+        background-color: #ffd900;
+        transform: translate(550px,350px) ;
+    }
+    75%{
+        background-color: #00e1ff;
+        transform: translate(0,350px) ;
+    }
+}
